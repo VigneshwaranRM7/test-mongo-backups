@@ -19,5 +19,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy app
 COPY . .
 
+EXPOSE 8080
+
 # Run Flask app
 CMD ["python", "app.py"]
